@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem;
+}
+.controls {
+  margin-top: 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: var(--card-bg);
+}
+.light {
+  --card-bg: #fff;
+  background-color: #f5f5f5;
+  color: #000;
+}
+.dark {
+  --card-bg: #333;
+  background-color: #111;
+  color: #eee;
+}
+.dark .card {
+  border-color: #555;
+}

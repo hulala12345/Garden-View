@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Garden Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <header>
+    <h1>Digital Garden Showcase</h1>
+    <div class="controls">
+      <input type="text" id="searchBox" placeholder="Search notes...">
+      <select id="timelineFilter">
+        <option value="all">All Dates</option>
+      </select>
+      <button id="themeToggle">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="tagDiagram">
+      <h2>Tag Relationships</h2>
+      <svg id="tagSvg" width="600" height="300"></svg>
+    </section>
+
+    <section id="notesGrid" class="grid"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
